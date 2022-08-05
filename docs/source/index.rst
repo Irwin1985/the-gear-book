@@ -6,7 +6,8 @@ El lenguaje de programación Gear
 **Sintaxis de Gear**
 
 ::
-   print('Hola mundo')
+
+    print('Hola mundo')
 
 
 
