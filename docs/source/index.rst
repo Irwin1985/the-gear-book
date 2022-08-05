@@ -1,15 +1,14 @@
-Welcome to Lumache's documentation!
+El lenguaje de programación Gear
 ===================================
 
-Lumache has its documentation hosted on Read the Docs.
+Gear es un lenguaje de programación multiparadigma, es imperativo, funcional, orientado a objetos y parcialmente dinámico. Soporta inferencia de tipos y, aunque carece de un sistema de tipado estático, es seguro. Gear fue creado por [Jeroen de Haan](https://github.com/jdehaan2014) quien no solo nos ha regalado un lenguaje maravilloso sino que también tuvo la molestia de crear un libro documentado todo el código de creación del intérprete, sin embargo esta documentación que estás leyendo no es una traducción de su libro sino más bien como mis apuntes durante el proceso de aprendizaje del libro.
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**Sintaxis de Gear**
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+```Pascal
+print('Hola mundo')
+```
+
 
 .. note::
 
