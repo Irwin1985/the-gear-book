@@ -5,7 +5,7 @@ El lenguaje de programación Gear
 
 **Sintaxis de Gear**
 
-.. code-block:: Pascal
+::
    print('Hola mundo')
 
 
