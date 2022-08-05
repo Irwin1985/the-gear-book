@@ -42,10 +42,22 @@ Como puedes ver, los bloques de código de Gear no están basados en llaves sino
 .. note:: El punto y coma ``;`` no es necesario para separar las sentencias y para las asignaciones hay que utilizar el operador ``:=`` y las comparaciones de igualdad se realizan con el operador ``=``.
 
 
-Contents
+Tabla de Contenidos
 --------
 
 .. toctree::
 
-   usage
-   api
+   variables
+   expresiones
+   colecciones
+   control-flow
+   funciones
+   clases
+   extensiones
+   traits
+   arrays
+   listas
+   rangos
+   diccionarios
+   enumerables
+   ficheros   
