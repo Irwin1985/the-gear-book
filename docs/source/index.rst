@@ -37,7 +37,7 @@ Que tal si nos creamos una función que nos de un saludo de bienvenida:
     end
     greetings(to: 'Irwin')
 
-Como puedes ver, los bloques de código de Gear no están basados en llaves sino en palabras tal y como lo hace Pascal y dialectos similares. De hecho la su sintaxis está basada fuertemente en _`Object Pascal <https://es.wikipedia.org/wiki/Object_Pascal>`_ por lo tanto su legibilidad es superior a los lenguajes basados en símbolos.
+Como puedes ver, los bloques de código de Gear no están basados en llaves sino en palabras tal y como lo hace Pascal y dialectos similares. De hecho la su sintaxis está basada fuertemente en `Object Pascal <https://es.wikipedia.org/wiki/Object_Pascal>`_ por lo tanto su legibilidad es superior a los lenguajes basados en símbolos.
 
 .. note:: El punto y coma ``;`` no es necesario para separar las sentencias y para las asignaciones hay que utilizar el operador ``:=`` y las comparaciones de igualdad se realizan con el operador ``=``.
 
