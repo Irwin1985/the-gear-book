@@ -176,7 +176,7 @@ Booleans
 Null
 ====
 
-``Null`` es de hecho un valor en **Gear**, puedes asignar ``Null`` a variables pero recuerda subir el primer caracter a mayúsculas. *¿Cuándo usar ``Null``?* cuando no conoces de antemano el valor que contendrá tu variable, pero recuerda que no debes usar tu variable con valor ``Null`` porque **Gear** te arrojará un error.
+``Null`` es de hecho un valor en **Gear**, puedes asignar ``Null`` a variables pero recuerda subir el primer caracter a mayúsculas. ¿Cuándo usar ``Null``? cuando no conoces de antemano el valor que contendrá tu variable, pero recuerda que no debes usar tu variable con valor ``Null`` porque **Gear** te arrojará un error.
 
 Unassigned
 ==========
