@@ -126,6 +126,97 @@ Concatenar cadenas de texto con el operador ``+`` no siempre es legible, veamos 
 
 ::
 
-  let bananas
+  let bananas := 4, fresas := 7
+  let frutas := 'Hay ' + bananas + ' bananas y ' + fresas + ' fresas.'
+
+Lo anterior se puede mejorar usando la famosa *interpolación de cadenas* o *string interpolation*:
+
+::
+
+  let frutas := 'Hay \(bananas) bananas y \(fresas) fresas.'
+
+Los valores deben estar encerrados en parentesis y precedidos por un ``\``, incluso se pueden realizar calculos dentro de los parentesis:
+
+::
+
+  let cesta := 'La cesta contiene \(bananas + fresas) piezas de frutas.'
+
+.. note:: Un string puede tener múltiples interpolaciones pero no se permiten interpolacines anidadas.
+
+Tambíen podemos invocar una función dentro de una interpolación:
+
+::
+
+  use system
+  let chars := Array('0123456789abcdefghijklmnopqrstuvwxyz')
+  
+  for each char in chars do
+    print('El caracter \(char) tiene su equivalente ASCII como: \(ord(char)).')
+  end
+
+.. note:: La función ``ord()`` forma parte de la librería estándar de **Gear** y retorna el valor ordinal de un caracter. La librería ``system`` provee funcionalidad para la iteración de los arrays entre otras funciones.
+
+Números
+=======
+
+Todos los números en **Gear** son flotantes con doble precisión lo cual es suficiente para contener incluso los enteros. 
+
+:: 
+
+  1                 // integer
+  999               // integer
+  3.1415            // float
+  2.1e-2 or 2.1E-2  // notación cientifica
+
+Booleans
+========
+
+``True`` y ``False`` con el primer caracter en mayúsculas.
+
+Null
+====
+
+``Null`` es de hecho un valor en **Gear**, puedes asignar ``Null`` a variables pero recuerda subir el primer caracter a mayúsculas. *¿Cuándo usar ``Null``?* cuando no conoces de antemano el valor que contendrá tu variable, pero recuerda que no debes usar tu variable con valor ``Null`` porque **Gear** te arrojará un error.
+
+Unassigned
+==========
+
+Es una forma de comprobar si una variable no existe o su valor es ``Null``
+
+::
+
+  assigned(myVar)
+  ?myVar
+
+Tuplas
+======
+
+Una *tupla* es una lista o secuencia de valores ordenados y finitos. Una *tupla* se declara encerrando sus elementos entre parentesis ``()`` y separados por comas, Ejemplo: ``(2, 7, 4, 1, 7)`` representa una *tupla* de 5 elementos. En **Gear** una variable puede contener una tupla.
+
+:: 
+
+  let one := (1, 'one')
+  print(one) // (1, 'one')
+  
+  let other := one
+  print(other) // (1, 'one')
+  
+  let a := 6, b := 'ten', c := True
+  
+  let some := (a, b, c)
+  print(some) // (6, 'ten', True)
+  
+  var s := some.2
+  print(s) // 'ten'
+  
+  some.2 := 'eleven'
+  print(some) // (6, 'eleven', True)
+  
+
+.. note::
+  - El primer elemento de una tupla tiene índice 1.
+  - Para acceder a un elemento de una tupla hay que colocar el nombre de la tupla seguido de un punto ``.``
+  - Para reasignar un valor a un elemento usamos la notación ``tupla.indice := valor``.
+
 
 
