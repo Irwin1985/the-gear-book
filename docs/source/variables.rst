@@ -73,3 +73,59 @@ El cuerpo de un *value* es muy flexible y permite cualquier código de *sentenci
 Al cambiar el valor de ``radius`` estamos haciendo una *asignación*. Una *asignación* es muy parecida a una *declaración* pero con ausencia de la palabra reservada *var* o *let* según el caso. El rol de una *asignación* es cambiar el valor de una variable mutable, las asignaciones para *constantes* y *values* están prohibidas.
 
 **Gear** admite los tipos de constantes regulares ``number``, ``string``, ``char`` y ``boolean``. Los tipos no están explícitamente disponibles como tales; son internos al intérprete. En principio, los valores no se convierten implícitamente a otro tipo, con una excepción. Puedes agregar cualquier valor a un ``string`` porque  el valor agregado será siempre conviertido en ``string``.
+
+
+Strings y Character
+===================
+
+Un ``string`` es un texto encerrado en comillas simples. Ejemplo:
+
+:: 
+
+  let helloWorld := 'Hello world!'
+  var code := '123'
+
+Si queremos que un ``string`` contenga una comilla simple entonces necesitaremos repetir la comilla simple:
+
+:: 
+
+  let label := 'it''s me'
+  print(label) // imprime: it's me
+  
+Un ``string`` puede ser concatenado con otro usando el operador ``+``:
+
+:: 
+
+  let hi := 'Hello ' + 'world' + '!' // 'Hello world!'
+
+``number`` y ``boolean`` también pueden ser concatenados a un ``string``:
+
+:: 
+
+  let hiNumber := 'Hello ' + 42 // 'Hello 42'
+  let truth := 'It is ' + True // 'It is True'
+
+
+Character
+=========
+
+Los caracteres se forman anteponiendo una comilla doble al caracter deseado:
+
+:: 
+
+  "a // representa al caracter 'a'
+  "1 // representa al caracter '1'
+
+Los caracteres también pueden ser concatenados al tipo ``string``:
+
+:: 
+
+  let helloWorld := 'Hello world' + "! // Hello world!
+  
+Concatenar cadenas de texto con el operador ``+`` no siempre es legible, veamos este ejemplo:
+
+::
+
+  let bananas
+
+
